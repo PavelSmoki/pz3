@@ -1,4 +1,5 @@
 @media (max-width: 760px) {
+
   .pc-content:not(.mobile-content),
   .tablet-content:not(.mobile-content) {
     display: none
@@ -41,6 +42,38 @@
   .nav-item+.nav-item {
     margin-left: 0
   }
+
+  .feedbacks {
+    overflow-y:scroll;
+    width: 100%;
+    min-height: 974px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+ }
+
+ .feedbacks h1 {
+    padding-top: 29px;
+    padding-bottom: 15px;
+ }
+
+ .feedbacks .container {
+  display: flex;
+  justify-content: center;
+ }
+
+ .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .feedbacks .comment {
+  overflow-x:hidden;
+  width: 189px;
+
+  margin: 0 25px;
+ }
 
   .content-wrapper {
     margin: 5px auto;

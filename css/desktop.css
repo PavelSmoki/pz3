@@ -88,11 +88,6 @@ nav {
   border-bottom: 2px solid #464547;
 }
 
-.slider-wrapper {
-  position: relative;
-  min-height: 590px;
-}
-
 .content-wrapper {
   margin: 0 auto;
   width: 1240px;
@@ -110,6 +105,18 @@ nav {
   flex: 1;
 }
 
+.avatar {
+  border: 1px solid #56700F;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 102px;
+  height: 102px;
+  margin: 0 auto;
+
+}
+
+
+
 @media (min-width: 1300px) {
 
   .tablet-content:not(.pc-content),
@@ -122,22 +129,14 @@ nav {
     position: relative;
   }
 
-  .content-img.interior-doors
-  {
-    position: absolute;
-    right: 0px;
-    top: -30px;
-    height: calc(100% + 60px);
-    max-height: 600px;
-  }
+
 
   .content-img.entrance-doors
   {
     position: absolute;
     right: 0px;
     top: -30px;
-    height: calc(100% + 60px);
-    max-height: 600px;
+    height: 630px;
   }
 
   .content-img.interior-doors
@@ -145,8 +144,7 @@ nav {
     position: absolute;
     left: 0px;
     top: -30px;
-    height: calc(100% + 60px);
-    max-height: 600px;
+    height: 630px;
   }
 
   #interior-doors .description-container {
@@ -156,9 +154,9 @@ nav {
   .content-img.terrace-doors
   {
     position: absolute;
-    right: -0px;
+    right: 0px;
     top: -30px;
-    height: calc(100% + 60px);
+    height: 630px;
   }
 
   .map-widget {
@@ -184,6 +182,62 @@ nav {
 
 .text-container {
   width: 300px
+}
+
+.feedbacks {
+  width: 768px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+
+.feedbacks {
+    background-color: #FEFEFE;
+    width: 1240px;
+    margin: 100px auto;
+}
+
+.feedbacks .container {
+    display: flex;
+    justify-content: center;
+}
+
+.feedbacks .comment {
+    width: 189px;
+    padding-bottom: 50px;
+    margin: 0 25px;
+}
+
+
+
+.feedbacks h1 {
+    font: bold 36px Open-sans, sans-serif;
+    padding: 50px 0 30px;
+    text-align: center;
+}
+
+.feedbacks h3 {
+    color: black;
+    font: bold 36px Open-sans, sans-serif;
+    padding: 50px 0 30px;
+    text-align: center;
+}
+
+.feedbacks h2 {
+    color: black;
+    font: bold 16px Open-sans, sans-serif;
+    margin: 5px 0 15px;
+    text-align: center;
+}
+
+.feedbacks p {
+    color: black;
+    font: normal 14px Open-sans, sans-serif;
+    line-height: 21px;
+    text-align: left;
+    padding: 25px 0 25px;
+    border-top: 1px solid rgba(153, 152, 152, 0.4);
+    border-bottom: 1px solid rgba(153, 152, 152, 0.4);
 }
 
 .content-text {
@@ -213,9 +267,6 @@ nav {
   margin-left: 40px
 }
 
-.slider-container {
-  overflow: hidden;
-}
 
 .slider-track {
   display: flex;
@@ -226,15 +277,8 @@ nav {
   height: 600px;
 }
 
-#main-slider .slider-item:first-of-type {
+#main-slider .slider-item {
   background: url(../img/books.jpg) no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.29);
-  background-blend-mode: multiply;
-}
-
-#main-slider .slider-item:last-of-type {
-  background: url(../img/dver.jpg) no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.29);
   background-blend-mode: multiply;
@@ -263,17 +307,6 @@ nav {
   line-height: 21px;
 }
 
-
-.slider-buttons {
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-}
 
 button:active,
 button:focus {
@@ -311,52 +344,14 @@ button:focus {
 }
 
 .review-wrapper {
-  min-height: 590px;
   margin: 100px auto;
   padding: 55px 140px 47px;
+  height: 590px;
   flex-direction: column;
   align-items: center;
   color: black;
   background-color: white;
   box-sizing: border-box;
-}
-
-.review-wrapper .slider-container {
-  width: 100%
-}
-
-.review-wrapper .slider-track {
-  padding-top: 30px;
-  justify-content: center;
-}
-
-.review-wrapper .slider-item {
-  padding: 0 25px;
-  min-width: 190px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.review-img {
-  border-radius: 50%;
-  max-width: 110px;
-}
-
-.review-name {
-  padding-top: 5px;
-  padding-bottom: 15px;
-  width: 100%;
-  border-bottom: 1px solid rgba(153, 152, 152, 0.4);
-  text-align: center;
-}
-
-.review-text {
-  padding: 20px 0;
-  min-height: 231px;
-  border-bottom: 1px solid rgba(153, 152, 152, 0.4);
-  overflow: none;
 }
 
 .form-wrapper {

@@ -77,7 +77,7 @@
   .content-img {
     margin: 30px 25px;
     max-width: calc(50% - 50px);
-    height: auto;
+    height: 500px;
     object-fit: fill;
   }
 
@@ -85,6 +85,8 @@
     margin-left: 80px;
     width: calc(50% - 50px)
   }
+
+  
 
   .text-container {
     max-width: 275px
@@ -115,6 +117,28 @@
     border-right-width: 15px
   }
 
+  .feedbacks {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+ }
+
+ .feedbacks h1 {
+    padding-top: 29px;
+    padding-bottom: 15px;
+ }
+
+ .feedbacks .container {
+  display: flex;
+  justify-content: center;
+ }
+
+ .feedbacks .comment {
+  width: 189px;
+
+  margin: 0 25px;
+ } 
+
   .tablet-circle-wrapper {
     margin-top: 20px;
     display: flex;
@@ -129,18 +153,6 @@
     padding: 30px 0;
     height: auto;
   }
-
-  .review-wrapper .slider-track {
-    flex-wrap: wrap;
-  }
-
-  .review-wrapper .slider-item {
-    margin: 0 50px;
-    padding: 0 0 15px 0;
-    width: 190px;
-    height: 405px;
-  }
-
 
   .form-wrapper {
     margin: 20px 0;
@@ -239,3 +251,4 @@
     max-height: 116px;
   }
 }
+
