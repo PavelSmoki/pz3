@@ -37,7 +37,7 @@
     </div>
   </div>
 
-    <!-- tablets only -->
+
     <div class="tablet-circle-wrapper tablet-content">
       <div class="secondary-text circle-block">320 -<br>500 BYN</div>
       <div class="secondary-text circle-block">экологично</div>
@@ -148,9 +148,9 @@
 
         <div class="text-input phone-label">
           <label for="prefix"><span class="footer-text number-prefix">+375</span></label>
-          <input id="prefix" type="text" onkeypress='validateNumbersInput(event)' pattern="(29|33|25)"
+          <input id="prefix" type="text" pattern="(29|33|25)"
             class="text-input small-text prefix-input" placeholder="29" required>
-          <input type="text" onkeypress='validateNumbersInput(event)' pattern="(^\d{7}$)"
+          <input type="text" pattern="(^\d{7}$)"
             class="text-input small-text phone-input" id="phone" required>
         </div>
 
@@ -225,7 +225,6 @@
 
   <div class="scroll-up"></div>
 
-  <script src="scripts/script.js"></script>
 </body>
 
 </html>
